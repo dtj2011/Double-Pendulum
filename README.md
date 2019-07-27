@@ -5,6 +5,8 @@ Original Video here: https://www.youtube.com/watch?v=uWzPe_S-RVE&t=1635s
 
 Live animation: https://codepen.io/dtj2011/pen/XvXaWW
 
+### Click Start to start animation, after altering values, click Re-Animate to restart animation.
+
 To make code clean, all variable definitions are added in ReadMe.
 
 ## Variable Definitions
