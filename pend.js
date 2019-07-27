@@ -29,9 +29,6 @@ document.getElementById("gravity").addEventListener('mousemove', () =>{
     document.getElementById("gravText").innerHTML = document.getElementById("gravity").value;
 });
 document.getElementById("button").addEventListener('click', () => {
-
-    document.getElementById("button").innerHTML = "Re-Animate";
-
     a1 = ((document.getElementById("angle1").value) / 180) * Math.PI;
     a2 = ((document.getElementById("angle2").value) / 180) * Math.PI;
     gravity = document.getElementById("gravity").value;
@@ -41,12 +38,21 @@ document.getElementById("button").addEventListener('click', () => {
     a2_v = 0;
     ctx.clearRect(-400,-200,800,600);
     ctx1.clearRect(-400,-200,800,600);
+    if(document.getElementById("button").innerHTML == "Animate")
+    {
+        document.getElementById("button").innerHTML = "Re-Animate";
 
-    cancelAnimationFrame(animationID);
-    return;
+        animationID = requestAnimationFrame(animate);
+
+    }
+    else
+    {
+        cancelAnimationFrame(animationID);
+        return;
+    }
+  
 });
 
-animationID = requestAnimationFrame(animate);
 
 function animate()
 {
@@ -62,6 +68,7 @@ function animate()
     drawLines();
 
     framecounter++;
+    console.log(framecounter);
 
 }
 function animateUpper(){
