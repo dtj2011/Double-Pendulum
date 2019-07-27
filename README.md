@@ -44,7 +44,7 @@ var animationID is used to store ID of requestioAnimationFrame function to call 
 
 ## User Editable Variables:
 
-A slider is provided using HTML to alter gravitaional constant without editing the pend.js file. Permitted values are between 0.1 and 1 with a slider step of 0.01. Default value is 0.4.
+A slider is provided using HTML to alter gravitational constant without editing the pend.js file. Permitted values are between 0.1 and 1 with a slider step of 0.01. Default value is 0.4.
 
 Input fields to input angle a1 and angle a2 are given. Angles are converted to radians before doing the calculations.
 
