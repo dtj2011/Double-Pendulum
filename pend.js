@@ -68,7 +68,7 @@ function animate()
     drawLines();
 
     framecounter++;
-    console.log(framecounter);
+    
 
 }
 function animateUpper(){
